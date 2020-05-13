@@ -1,0 +1,13 @@
+version: "3"
+services:
+  manvakart:
+    image: adaragunchi/manvakart:1.0
+    ports:
+      - "8121:8121"
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          memory: 1G
+        reservations:
+          memory: 1G
